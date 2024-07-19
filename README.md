@@ -28,10 +28,10 @@ The primary programming language used is Python, with additional HTML and CSS fo
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Firebase Documentation](https://firebase.google.com/docs)
 - [Creating a Service Account on Firebase Console](https://cloud.google.com/docs/authentication/getting-started)
--[Don't add Google Service JSON to Your Public Repositore - Stack Overflow](https://stackoverflow.com/questions/37358340/should-i-add-the-google-services-json-from-firebase-to-my-repository?r=SearchResults&s=3%7C88.5889
-)
+-[Don't add Google Service JSON to Your Public Repositore - Stack Overflow](https://stackoverflow.com/questions/37358340/should-i-add-the-google-services-json-from-firebase-to-my-repository?r=SearchResults&s=3%7C88.5889)
 -[Python + Firebase (Pyrebase) CRUD Tutorials - YOUTUBE](https://www.youtube.com/watch?v=LaGYxQWYmmc&list=PLs3IFJPw3G9Jwaimh5yTKot1kV5zmzupt)
 -[Connecting Firebase Realtime Database To Python: Creating, Reading, Updating, and Deleting Data](https://www.youtube.com/watch?v=DCaH4bQ4DxA&pp=ygUoaG93IHRvIHNldHVwIGdvb2dsZSBmaXJlYmFzZSB3aXRoIHB5dGhvbg%3D%3D)
+
 # Future Work
 
 - Add more detailed health metrics and analytics for users.
