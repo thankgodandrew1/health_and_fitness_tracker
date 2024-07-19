@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Activities for User: {{ user_name }}</h1>
+      <form
+        action="{{ url_for('add_activity', user_id=user_id) }}"
+        method="post"
+      >
+        <input
+          type="text"
+          name="activity_type"
+          placeholder="Activity Type"
+          required
+        />
+        <input
+          type="number"
+          name="duration"
+          placeholder="Duration (minutes)"
+          required
+        />
+        <button type="submit">Add Activity</button>
+      </form>
+      <ul>
+        {% for activity in activities %}
+        <li class="user-item">
+          <span
+            >{{ activity.activity_type }} - {{ activity.duration }}
+            minutes</span
+          >
+          <div class="user-actions">
+            <a
+              href="{{ url_for('update_activity', activity_id=activity.id, user_id=user_id) }}"
+              >Update</a
+            >
+            <a
+              href="{{ url_for('delete_activity', activity_id=activity.id, user_id=user_id) }}"
+              >Delete</a
+            >
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ url_for('users') }}">Back to Users</a>
+    </div>
+  </body>
+</html>
